@@ -1,0 +1,114 @@
+:root{
+    --vermelho: #EA0914;
+    --preto:#141414;
+    --cinza:#909090;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* elemento base*/
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;   
+    color: #fff;         
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: "Arial Black", Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+
+/* filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)), url("../img/the_whalking_dead.png");
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+
+margin-top: 18px;;    margin-bottom: 40px;
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+
+    padding: 10px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 0.3 ease all;
+}
+.botao:hover{
+    background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,8));
+    color: black;
+    box-shadow: -1px -1px 2px var(--preto);
+}
+.botao i{
+    font-size: 2vh;
+}
+.botao:hover i{
+    color: var(--vermelho);
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrousel-filmes{
+    margin-top: 5px;
+}
+
+.box-filme:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    border: 1px solid var(--preto);
+    border-radius: 10px;
+}
